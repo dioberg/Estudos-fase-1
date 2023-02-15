@@ -1,0 +1,87 @@
+form{
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.582);
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom:1em;
+    font: 1em sans-serif;
+    border: 1px solid black;
+}
+
+label{
+    font-weight: bold;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+button{
+    background-color: aliceblue;
+    border: 1px solid blue;
+    color: blue;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+button:hover{
+    background-color: blue;
+    color: aliceblue;
+    cursor: pointer;
+}
+@media screen and (max-width:768px){
+    form{
+        width: 100%;
+    }
+    
+}
+
+input, textarea:focus {
+    border-color:blue ;
+}
+
+
+input:invalid, textarea:invalid{
+    border-color: red;
+}
+
+input:valid, textarea:valid{
+    border-color: green;
+}
+ span {
+    position: relative;
+ }
+
+ input:invalid + span::before, textarea:invalid + span::before{
+     content: '✖';
+     color: red;
+ }
+
+ input:valid + span::before, textarea:valid + span::before{
+    content: '✓';
+    color:green;
+}
+
+
+input + span::before{
+    position: absolute;
+    left: 560px;
+    bottom: 45px;
+}
+
+textarea + span::before{
+    position: absolute;
+    left: 560px;
+    bottom: 60px;
+}
+@media screen and (max-width:680px){
+    button{
+        width: 100%;
+
+    }
+    
+}
+

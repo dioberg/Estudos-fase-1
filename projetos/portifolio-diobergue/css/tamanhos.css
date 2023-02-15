@@ -1,0 +1,34 @@
+
+
+@media screen and (max-width:1136px){
+    nav ul{
+        display: none;
+
+    }
+
+    .hero{
+        height: 100vh;
+        width: 100%;
+        background-image: url(../img/build-diobergue2.png);
+        background-size: cover;
+        background-position: right;
+    }
+
+    .btn{
+        display: none;
+    }
+
+    nav .logo{
+        
+    margin:center;
+        
+    }
+
+    .text1{
+        padding-top: 600px;
+    }
+
+    .newslatter{
+        display: none;
+    }
+}

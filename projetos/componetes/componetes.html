@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./componetes.css">
+    <link rel="stylesheet" href="./grid.css">
+
+    <script src="./componetes.js"></script>
+</head>
+<body>
+    <form action="#">
+        <div class="row">
+            <div class="col-6 col-s-12">
+                <fieldset>
+                    <legend>
+                        caixas de texto
+                    </legend>
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="txtNome" class="rotulo">nome:</label>
+                            <input type="text" id="txtNome" name="nome" placeholder="Digite seu nome" maxlength="50" required autofocus  class="caixa-texto">
+                        </div>
+                        <div class="col-4">
+                            <label for="txt-email" class="rotulo">E-mail</label>
+                            <input type="mail" id="txt-email" name="email" placeholder="Informe seu e-mail" maxlength="100" required class="caixa-texto">
+                        </div>
+
+                        <div class="col-4">
+                            <label for="txtcelular" class="rotulo">Celular:</label>
+                            <input type="tel" id="txtcelular" name="Celular" placeholder="Informe seu numero" maxlength="12" required class="caixa-texto">
+                        </div>
+
+                    </div>
+                </fieldset>   
+            </div>
+            <div class="col-6 col-s-12">
+                <fieldset>
+                    <legend>textArea</legend>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="txtdescricao" class="rotulo">Descrição</label>
+                            <textarea name="descrição" id="txtdescricao"  rows="3" placeholder="digite aqui" class="caixa-texto" maxlength="150"></textarea>
+
+                        </div>
+
+                    </div>
+                </fieldset>
+
+            </div>    
+        </div>
+        <div class="row">
+            <div class="col-6 col-s-12">
+                <fieldset>
+                    <legend>chekbox</legend>
+                    <div class="row">
+                        <div class="col-4 col-s-12">
+                            
+                            <label for="checkcarro" class="label-check">
+                                <input type="checkbox" id="checkcarro" name="veiculo1" value="carro"  >
+                                <span class="caixa-check"></span>
+                                Carro
+                            </label>
+                        </div>
+
+                        <div class="col-4 col-s-12">
+                            
+                            <label for="checkmoto" class="label-check">
+                                <input type="checkbox" id="checkmoto" name="veiculo2" value="moto"  >
+                                <span class="caixa-check"></span>
+                                moto
+                            </label>
+                        </div>
+
+                        <div class="col-4 col-s-12">
+                            
+                            <label for="checkbicicleta" class="label-check">
+                                <input type="checkbox" id="checkbicicleta" name="veiculo3" value="bicicleta" checked >
+                                <span class="caixa-check"></span>
+                                bicicleta
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                
+            </div>
+            <div class="col-6 col-s-12">
+                <fieldset>
+                    <legend>Senhas</legend>
+                    <div class="row">
+                        <div class="col-4 col-s-12">
+                            <label for="txtsenha" class="rotulo">Senha:</label>
+                            <input type="password" id="txtsenha" name="Senha" maxlength="10" minlength="6" placeholder="digite sua senha" required class="caixa-texto">
+
+                        </div>
+                        <div class="col-4 col-s-12">
+                             <div class="caixa-vazio-25"></div>
+
+                            <label for="checkmostrar" class="label-check">
+                                <input type="checkbox" id="checkmostrar" onchange="mostrarSenha()">
+                                <span class="caixa-check"></span>
+                                mostrar Senha
+                            </label>
+
+                        </div>
+
+                    </div>
+                </fieldset>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-s-12">
+                <fieldset>
+                    <legend>Radio Button</legend>
+                    <div class="row">
+                        <div class="col-4 col-s-12">
+                            
+                            <label for="radioCarro" class="label-radio">
+                               
+                                Carro
+                                 <input type="radio" id="radioCarro" name="veiculo" value="carro">
+                                 <span class="bol-radio"></span>
+                            </label>
+
+                        </div>
+
+                        <div class="col-4 col-s-12">
+                           
+                            <label for="radioMoto" class="label-radio"> 
+                                Moto
+                                <input type="radio" id="radioMoto" name="veiculo" value="Moto">
+                                <span class="bol-radio"></span>
+                            </label>
+
+                        </div>
+
+                        <div class="col-4 col-s-12">
+                            
+                            <label for="radioBicicleta" class="label-radio"> 
+                                Bicicleta
+                                <input type="radio" id="radioBicicleta" name="veiculo" value="Bicicleta">
+                                <span class="bol-radio"></span>
+                            </label>
+
+                        </div>
+
+                    </div>
+                </fieldset>
+
+            </div>
+            <div class="col-6 col-s-12">
+                <fieldset>
+                    <legend>Data e Hora</legend>
+                    <div class="row">
+                        <div class="col-4 col-s-12">
+                            <label for="txtData" class="rotulo">Data:</label>
+                            <input type="date" id="txtData" name="data" class="caixa-texto" >
+
+                        </div>
+
+                        <div class="col-4 col-s-12">
+                            <label for="txtHora" class="rotulo">Hora:</label>
+                            <input type="time" id="txtHora" name="hora" class="caixa-texto">
+
+                        </div>
+
+                        <div class="col-4 col-s-12">
+                            <label for="txtdtataehora" class="rotulo">Data e Hora</label>
+                            <input type="datetime-local" id="txtdtataehora" name="datahora" class="caixa-texto">
+                        </div>
+                    </div>
+                </fieldset>
+
+
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-6 col-s-12">
+                <fieldset>
+                    <legend>Números</legend>
+                    <div class="row">
+                        <div class="col-4 col-s-6">
+                            <label for="txtIdade" class="rotulo">Idade:</label>
+                            <input type="number" id="txtIdade" name="idade" class="caixa-texto" placeholder="Idade" required min="0" max="50">
+                        </div>
+                        <div class="col-4 col-s-6">
+                            <label for="txtvolume" class="rotulo">Volume:  <output id="outvolume"></output> </label>
+                            <input type="range" id="txtvolume" name="volume" min="0" max="10" oninput="outvolume.value = txtvolume.value" class="range"
+                            >
+                          
+                        </div>
+                    </div>
+
+                </fieldset>
+
+
+            </div>
+            <div class="col-6 col-s-12">
+                <fieldset>
+                    <legend> Select e datalist</legend>
+                    <div class="row">
+                        <div class="col-4 col-s-12">
+                            <label for="selectBasico" class="rotulo">Select Basico: </label>
+                            <select name="basico" id="selectBasico" class="caixa-texto">
+                                <option value="1">opção 01</option>
+
+                                <option value="2">opção 02</option>
+
+                                <option value="3">opção 03</option>
+
+                                <option value="4">opção 04</option>
+                            </select>
+
+                        </div>
+                        <div class="col-4 col-s-12">
+                            <label for="selectGrupo" class="rotulo"> Select Agrupado</label>
+                            <select name="agrupado" id="selectGrupo " class="caixa-texto">
+                                <optgroup label="Grupo 01">
+                                    <option value="1">opção 01</option>
+
+                                <option value="2">opção 02</option>
+
+                                </optgroup>
+
+                                <optgroup label="Grupo 02">
+                                    <option value="1">opção 01</option>
+
+                                <option value="2">opção 02</option>
+
+                                </optgroup>
+
+
+                            </select>
+
+                        </div>
+                        <div class="col-4 col-s-12">
+                            <label for="txtlist" class="rotulo">Datalist</label>
+                            <input type="text" id="txtlist" name="lista" placeholder="Selecione uma opção" class="caixa-texto" list="lista">
+                            <datalist id="lista">
+                                <option value="1">opção 01 </option>
+
+                                <option value="2">opção 02 </option>
+
+                                <option value="3">opção 03 </option>
+                            </datalist>
+
+                        </div>
+
+                    </div>
+                </fieldset>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
