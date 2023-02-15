@@ -1,0 +1,13 @@
+
+*{
+    height: 100%;
+}
+body{
+    background-image:linear-gradient(to bottom,#330909, #33091D, #1C0933) ;
+    color: #fdfdfd;
+    background-attachment: fixed;
+    
+}
+h1{
+    text-justify: center;
+}

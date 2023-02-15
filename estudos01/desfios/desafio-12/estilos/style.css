@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shadows+Into+Light&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;500;600&family=Indie+Flower&family=Shadows+Into+Light&display=swap');
+
+:root{
+     --fonte1:Verdana, Geneva, Tahoma, sans-serif;
+     --fonte2: 'Indie Flower', cursive;
+     --fonte3:'Shadows Into Light', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+
+}
+
+html,body{
+    min-height: 100vh;
+    background-color: #B3B2B1;
+    font-family: var(--fonte1);
+}
+/*cabeçario*/
+header{
+    background-color: #2D076B;
+    color: #FCF3E8;
+    text-align: center;
+}
+
+header > h1{
+    padding-top:50px ;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 8vw;
+}
+
+header  p{
+    padding-bottom: 50px;
+}
+
+/* corpo do site*/
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 35px;
+    font-family: var(--fonte3));
+    font-size: 3vw;
+    font-size: border;
+    
+}
+
+section p{
+    padding: 1em;
+}
+
+section.imagem{
+   
+    background-color: black;
+    color: #FCF3E8;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.234);
+    background-attachment: fixed;
+}
+
+/*
+
+section.imagem > p{
+    background-color: #2d076b3a;
+    padding: 4px;
+    width: 400px;
+    
+}
+*/
+section.imagem > p{
+    display: inline-block;
+    background-color: #2d076b3a;
+    padding: 4px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img1{
+    background-image: url('../imagens/foto-002.jpg');
+   
+    background-size: cover;
+
+}
+
+section#img2{
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+}
+
+/* links*/
+a{
+    color: #FCF3E8;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
+header a:hover{
+    text-decoration: underline;
+}
+
+
+/* rodape*/
+
+footer a:hover{
+    color:#FCF3E8;
+    text-decoration: underline;
+}
+
+footer{
+    background-color:#2D076B ;
+    color: #FCF3E8;
+    text-align: center;
+    padding: 10px;
+}

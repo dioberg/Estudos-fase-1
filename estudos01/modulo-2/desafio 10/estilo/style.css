@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+
+@font-face {
+    font-family: 'android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+
+
+
+:root {
+    --cor1:#49ab55;
+    --cor2:#5fde6e;
+    --cor3:#a6e3ad;
+    --cor4:#295e2f;
+    --cor5:#186621;
+
+    --fonte-padrao:Arial, verdana, helvetica sans-serif;
+    --fonte-destaque: font-family: 'Noto Sans', sans-serif;
+    --fonte-android:'android', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color:#A6E3AD;
+    font-family: var(--fonte-padrao);
+}
+
+
+
+header{
+    background-color: #295e2f;
+}
+
+header > p {
+    color: white;
+}
+
+
+nav{
+    background-color: #295e2f;
+   
+}
+
+
+main{
+    color: white;
+}
+
+
+header > h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+}
+
+
+main  h1{
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+}
+
+
+footer{
+    background-color: #295e2f;
+    color: antiquewhite;
+}
